@@ -1,0 +1,13 @@
+<app-header [titulo]="tituloAlert"></app-header>
+
+<ion-content class="ion-padding">
+  <ion-button color="primary" expand="full" (click)="presentAlert()"
+    >Mostrar Alerta Sencilla</ion-button
+  >
+  <ion-button color="medium" expand="full" (click)="presentAlertConfirm()"
+    >Alerta con botones y Event Handler</ion-button
+  >
+  <ion-button color="secondary" expand="full" (click)="presentAlertPrompt()"
+    >Cambiar titulo de pagina</ion-button
+  >
+</ion-content>

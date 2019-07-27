@@ -74,4 +74,72 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  //* Facebook */
+  --ion-color-facebook: #3b5998;
+  --ion-color-facebook-rgb: 59, 89, 152;
+  --ion-color-facebook-contrast: #ffffff;
+  --ion-color-facebook-contrast-rgb: 255, 255, 255;
+  --ion-color-facebook-shade: #344e86;
+  --ion-color-facebook-tint: #4f6aa2;
+
+  /* Youtube */
+  --ion-color-youtube: #ff0000;
+  --ion-color-youtube-rgb: 255, 0, 0;
+  --ion-color-youtube-contrast: #ffffff;
+  --ion-color-youtube-contrast-rgb: 255, 255, 255;
+  --ion-color-youtube-shade: #e00000;
+  --ion-color-youtube-tint: #ff1a1a;
+
+  /* Twitter */
+  --ion-color-twitter: #1da1f2;
+  --ion-color-twitter-rgb: 29, 161, 242;
+  --ion-color-twitter-contrast: #ffffff;
+  --ion-color-twitter-contrast-rgb: 0, 0, 0;
+  --ion-color-twitter-shade: #1a8ed5;
+  --ion-color-twitter-tint: #34aaf3;
+
+  /* Snapchat */
+  --ion-color-snapchat: #fffc00;
+  --ion-color-snapchat-rgb: 255, 252, 0;
+  --ion-color-snapchat-contrast: #000000;
+  --ion-color-snapchat-contrast-rgb: 0, 0, 0;
+  --ion-color-snapchat-shade: #e0de00;
+  --ion-color-snapchat-tint: #fffc1a;
+}
+
+.ion-color-youtube {
+  --ion-color-base: var(--ion-color-youtube) !important;
+  --ion-color-base-rgb: var(--ion-color-youtube-rgb) !important;
+  --ion-color-contrast: var(--ion-color-youtube-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-youtube-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-youtube-shade) !important;
+  --ion-color-tint: var(--ion-color-youtube-tint) !important;
+}
+
+.ion-color-facebook {
+  --ion-color-base: var(--ion-color-facebook) !important;
+  --ion-color-base-rgb: var(--ion-color-facebook-rgb) !important;
+  --ion-color-contrast: var(--ion-color-facebook-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-facebook-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-facebook-shade) !important;
+  --ion-color-tint: var(--ion-color-facebook-tint) !important;
+}
+
+.ion-color-twitter {
+  --ion-color-base: var(--ion-color-twitter) !important;
+  --ion-color-base-rgb: var(--ion-color-twitter-rgb) !important;
+  --ion-color-contrast: var(--ion-color-twitter-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-twitter-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-twitter-shade) !important;
+  --ion-color-tint: var(--ion-color-twitter-tint) !important;
+}
+
+.ion-color-snapchat {
+  --ion-color-base: var(--ion-color-snapchat) !important;
+  --ion-color-base-rgb: var(--ion-color-snapchat-rgb) !important;
+  --ion-color-contrast: var(--ion-color-snapchat-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-snapchat-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-snapchat-shade) !important;
+  --ion-color-tint: var(--ion-color-snapchat-tint) !important;
 }

@@ -1,0 +1,45 @@
+<app-header titulo="Ion Grid"></app-header>
+<ion-content padding fullscreen>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col class="mx-1 color-twitter">Item</ion-col>
+      <ion-col class="mx-1 color-twitter">Item</ion-col>
+      <ion-col class="mx-1 color-twitter">Item</ion-col>
+    </ion-row>
+    <ion-row class="mt-20">
+      <ion-col
+        class="mx-1 color-twitter"
+        *ngFor="let item of [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]; let i = index"
+      >
+        {{ i + 1 }}
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col
+        size="12"
+        size-xs="12"
+        size-sm="6"
+        size-md="4"
+        size-lg="3"
+        *ngFor="let item of [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+      >
+        <ion-card mode="ios">
+          <ion-item color="primary">
+            <ion-icon color="light" slot="start" name="pin"></ion-icon>
+            <ion-label>Marcador</ion-label>
+          </ion-item>
+          <ion-img src="/assets/shapes.svg"></ion-img>
+          <ion-card-content>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            fugiat, nisi explicabo incidunt nam porro ea nulla, id nemo
+            architecto, molestiae quo at obcaecati dolorum quibusdam cumque
+            rerum quasi aliquam magni repellat velit pariatur harum esse! Sit
+            vitae fugit laborum modi repudiandae omnis ipsa delectus iure et
+            sint! Expedita, cum.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

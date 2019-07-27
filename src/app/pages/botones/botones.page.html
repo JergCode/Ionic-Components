@@ -1,0 +1,59 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="'/'"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Botones</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+      <ion-button color="primary">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--
+  ============================== BOTONES NORMALES ============================== -->
+  <ion-button size="small" expand="full">Small</ion-button>
+  <ion-button size="default" expand="full">Default</ion-button>
+  <ion-button size="large" expand="full">Large</ion-button>
+
+  <!--
+  ============================== ANCHOR ============================== -->
+  <ion-button
+    expand="full"
+    [routerLink]="['/avatar']"
+    color="tertiary"
+    class="mt-20"
+    >Link</ion-button
+  >
+
+  <!--
+  ============================== ION-GRID -- ION-ROW & ION-COL ============================== -->
+  <ion-row class="mt-20">
+    <ion-col>
+      <ion-button expand="full" [routerLink]="['/avatar']" color="tertiary"
+        >Link</ion-button
+      >
+    </ion-col>
+    <ion-col>
+      <ion-button
+        expand="full"
+        [routerLink]="['/accion-sheet']"
+        color="tertiary"
+        >Action Sheet</ion-button
+      >
+    </ion-col>
+  </ion-row>
+
+  <!--
+  ============================== FILL ============================== -->
+
+  <ion-button class="mt-20" fill="clear">Clear</ion-button>
+  <ion-button class="mt-20" fill="outline">Outline</ion-button>
+  <ion-button class="mt-20" fill="solid">Solid</ion-button>
+</ion-content>

@@ -1,0 +1,19 @@
+<app-header titulo="infinite scroll"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Lista</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let item of data; let i = index">
+      <ion-label>Item {{ i + 1 }}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll threshold="150px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="dots"
+      loadingText="Cargando siguientes datos..."
+    >
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

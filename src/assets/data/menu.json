@@ -1,0 +1,61 @@
+[
+  { "name": "Accion Sheet", "icon": "appstore", "redirectTo": "/accion-sheet" },
+  { "name": "Alert", "icon": "american-football", "redirectTo": "/alert" },
+  { "name": "Avatar", "icon": "beaker", "redirectTo": "/avatar" },
+  {
+    "name": "Botones y Router",
+    "icon": "radio-button-on",
+    "redirectTo": "/botones"
+  },
+  { "name": "Card", "icon": "card", "redirectTo": "/card" },
+  {
+    "name": "CheckBox",
+    "icon": "checkmark-circle-outline",
+    "redirectTo": "/check"
+  },
+  {
+    "name": "Date Time",
+    "icon": "calendar",
+    "redirectTo": "/datetime"
+  },
+  {
+    "name": "Floating Action Button (FAB)",
+    "icon": "logo-ionic",
+    "redirectTo": "/fab"
+  },
+  {
+    "name": "Grid",
+    "icon": "grid",
+    "redirectTo": "/grid"
+  },
+  {
+    "name": "Infinite Scroll",
+    "icon": "menu",
+    "redirectTo": "/infinite-scroll"
+  },
+  {
+    "name": "Inputs Form",
+    "icon": "hammer",
+    "redirectTo": "/input"
+  },
+  {
+    "name": "Listas Sliding",
+    "icon": "list",
+    "redirectTo": "/lista"
+  },
+  {
+    "name": "Listas Reording",
+    "icon": "reorder",
+    "redirectTo": "/lista-reorder"
+  },
+  {
+    "name": "Loading",
+    "icon": "timer",
+    "redirectTo": "/loader"
+  },
+  {
+    "name": "Modal",
+    "icon": "albums",
+    "redirectTo": "/modal"
+  }
+]
