@@ -57,5 +57,45 @@
     "name": "Modal",
     "icon": "albums",
     "redirectTo": "/modal"
+  },
+  {
+    "name": "Pop Over",
+    "icon": "wallet",
+    "redirectTo": "/popover"
+  },
+  {
+    "name": "Progress Bar & Range",
+    "icon": "code-working",
+    "redirectTo": "/progress-bar"
+  },
+  {
+    "name": "Refresher",
+    "icon": "arrow-round-down",
+    "redirectTo": "/refresher"
+  },
+  {
+    "name": "Search Bar",
+    "icon": "search",
+    "redirectTo": "/searchbar"
+  },
+  {
+    "name": "Segment",
+    "icon": "copy",
+    "redirectTo": "/segment"
+  },
+  {
+    "name": "Slides",
+    "icon": "images",
+    "redirectTo": "/slides"
+  },
+  {
+    "name": "Tabs",
+    "icon": "cog",
+    "redirectTo": "/tabs/account"
+  },
+  {
+    "name": "Toast",
+    "icon": "browsers",
+    "redirectTo": "/toast"
   }
 ]

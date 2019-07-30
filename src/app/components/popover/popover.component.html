@@ -1,0 +1,12 @@
+<ion-list>
+  <ion-list-header>
+    <ion-label>Menu</ion-label>
+  </ion-list-header>
+  <ion-item
+    (click)="onClick(i + 1)"
+    *ngFor="let item of items; let i = index"
+    detail
+  >
+    <ion-label>Item - {{ i + 1 }}</ion-label>
+  </ion-item>
+</ion-list>

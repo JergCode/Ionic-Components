@@ -5,28 +5,24 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ModalPage } from './modal.page';
-import { ComponentsModule } from 'src/app/components/components.module';
-import { ModalInfoPage } from '../modal-info/modal-info.page';
-import { ModalInfoPageModule } from '../modal-info/modal-info.module';
+import { ProgressBarPage } from './progress-bar.page';
+import { ComponentsModule } from '../../components/components.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: ModalPage
+    component: ProgressBarPage
   }
 ];
 
 @NgModule({
-  entryComponents: [ModalInfoPage],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     ComponentsModule,
-    ModalInfoPageModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ModalPage]
+  declarations: [ProgressBarPage]
 })
-export class ModalPageModule {}
+export class ProgressBarPageModule {}

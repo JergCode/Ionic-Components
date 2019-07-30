@@ -8,10 +8,10 @@ import { ModalInfoPage } from '../modal-info/modal-info.page';
   styleUrls: ['./modal.page.scss']
 })
 export class ModalPage implements OnInit {
+  datos: any;
   constructor(private modal: ModalController) {}
 
   ngOnInit() {}
-
   async abrirModal() {
     const modal = await this.modal.create({
       component: ModalInfoPage,
@@ -23,5 +23,10 @@ export class ModalPage implements OnInit {
     });
 
     await modal.present();
+
+    const { data } = await modal.onDidDismiss();
+    this.datos = data;
+
+    console.log('Retorno de la información del modal', data);
   }
 }

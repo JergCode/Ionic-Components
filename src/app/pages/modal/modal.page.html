@@ -4,4 +4,11 @@
   <ion-button (click)="abrirModal()" expand="full">
     Abrir Modal
   </ion-button>
+  <hr />
+  <br />
+  <br />
+  <h3>Información recopilada del Modal</h3>
+  <h5 *ngIf="datos">
+    {{ datos.firstName }} {{ datos.lastName }} - {{ datos.pais }}
+  </h5>
 </ion-content>

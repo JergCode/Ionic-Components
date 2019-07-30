@@ -5,28 +5,26 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ModalPage } from './modal.page';
+import { SearchbarPage } from './searchbar.page';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { ModalInfoPage } from '../modal-info/modal-info.page';
-import { ModalInfoPageModule } from '../modal-info/modal-info.module';
+import { PipesModule } from '../../pipes/pipes.module';
 
 const routes: Routes = [
   {
     path: '',
-    component: ModalPage
+    component: SearchbarPage
   }
 ];
 
 @NgModule({
-  entryComponents: [ModalInfoPage],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     ComponentsModule,
-    ModalInfoPageModule,
+    PipesModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ModalPage]
+  declarations: [SearchbarPage]
 })
-export class ModalPageModule {}
+export class SearchbarPageModule {}

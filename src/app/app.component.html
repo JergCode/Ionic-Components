@@ -1,4 +1,24 @@
 <ion-app>
-  <app-menu></app-menu>
-  <ion-router-outlet id="principal"></ion-router-outlet>
+  <ion-split-pane when="md">
+    <!-- <app-menu id="menuPrincipal"></app-menu> -->
+    <ion-menu side="start" menuId="menuPrincipal" contentId="paginaPrincipal">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle autoHide="false" *ngFor="let page of pages | async">
+            <ion-item [routerLink]="page.redirectTo">
+              <ion-icon slot="start" [name]="page.icon"> </ion-icon>
+              <ion-label>{{ page.name }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <ion-router-outlet id="paginaPrincipal" main></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>

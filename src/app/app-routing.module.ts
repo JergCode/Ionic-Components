@@ -45,7 +45,15 @@ const routes: Routes = [
     path: 'loader',
     loadChildren: './pages/loader/loader.module#LoaderPageModule'
   },
-  { path: 'modal', loadChildren: './pages/modal/modal.module#ModalPageModule' }
+  { path: 'modal', loadChildren: './pages/modal/modal.module#ModalPageModule' },
+  { path: 'popover', loadChildren: './pages/popover/popover.module#PopoverPageModule' },
+  { path: 'progress-bar', loadChildren: './pages/progress-bar/progress-bar.module#ProgressBarPageModule' },
+  { path: 'refresher', loadChildren: './pages/refresher/refresher.module#RefresherPageModule' },
+  { path: 'searchbar', loadChildren: './pages/searchbar/searchbar.module#SearchbarPageModule' },
+  { path: 'segment', loadChildren: './pages/segment/segment.module#SegmentPageModule' },
+  { path: 'slides', loadChildren: './pages/slides/slides.module#SlidesPageModule' },
+  { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule' },
+  { path: 'toast', loadChildren: './pages/toast/toast.module#ToastPageModule' }
 ];
 
 @NgModule({
